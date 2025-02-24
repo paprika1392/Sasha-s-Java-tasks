@@ -1,6 +1,6 @@
 package org.example.Overwrite;
 
-public class vehicle {
+public class Vehicle {
 
     public void move () {
         System.out.println("The vehicle is moving");

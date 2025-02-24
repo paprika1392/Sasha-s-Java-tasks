@@ -1,11 +1,10 @@
 package org.example.Overwrite.SubClassefOfVehicle;
 
-import org.example.Overwrite.vehicle;
+import org.example.Overwrite.Vehicle;
 
-public class car extends vehicle {
+public class Car extends Vehicle {
 
     @Override public void move() {
         System.out.println("The car is moving");
     }
-
 }
