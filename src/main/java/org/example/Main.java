@@ -1,6 +1,8 @@
 package org.example;
 
 import org.example.IfElse.IfElseTasks;
+import org.example.OOP.SubClassesOfEmployee.Developer;
+import org.example.OOP.SubClassesOfEmployee.Manager;
 import org.example.OverLoad.AreaCalculator;
 import org.example.Overwrite.SubClassefOfVehicle.Airplane;
 import org.example.Overwrite.SubClassefOfVehicle.Bicycle;
@@ -30,7 +32,22 @@ public class Main {
        // }
 
         //3
-        AreaCalculator.calculateArea(0.5, 2,4);
+        //AreaCalculator.calculateArea(0.5, 2,4);
+
+        //4
+
+        Manager manager = new Manager("Sasha", 200, 300);
+        manager.displayEmployeeInfo();
+
+        Developer junDev = new Developer("Kolya", 300, "junior");
+        junDev.displayEmployeeInfo();
+
+        Developer midDev = new Developer("Vasya", 500, "middle");
+        midDev.displayEmployeeInfo();
+
+        Developer sinDev = new Developer("Andrey", 700, "senior");
+        sinDev.displayEmployeeInfo();
+
 
 
 
