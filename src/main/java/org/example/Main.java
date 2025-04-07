@@ -1,13 +1,6 @@
 package org.example;
 
-import org.example.IfElse.IfElseTasks;
-import org.example.OOP.SubClassesOfEmployee.Developer;
-import org.example.OOP.SubClassesOfEmployee.Manager;
-import org.example.OverLoad.AreaCalculator;
-import org.example.Overwrite.SubClassefOfVehicle.Airplane;
-import org.example.Overwrite.SubClassefOfVehicle.Bicycle;
-import org.example.Overwrite.SubClassefOfVehicle.Car;
-import org.example.Overwrite.Vehicle;
+import org.example.Collections.SetTask;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,17 +29,27 @@ public class Main {
 
         //4
 
-        Manager manager = new Manager("Sasha", 200, 300);
-        manager.displayEmployeeInfo();
+//        Manager manager = new Manager("Sasha", 200, 300);
+//        manager.displayEmployeeInfo();
+//
+//        Developer junDev = new Developer("Kolya", 300, "junior");
+//        junDev.displayEmployeeInfo();
+//
+//        Developer midDev = new Developer("Vasya", 500, "middle");
+//        midDev.displayEmployeeInfo();
+//
+//        Developer sinDev = new Developer("Andrey", 700, "senior");
+//        sinDev.displayEmployeeInfo();
 
-        Developer junDev = new Developer("Kolya", 300, "junior");
-        junDev.displayEmployeeInfo();
+        //5
 
-        Developer midDev = new Developer("Vasya", 500, "middle");
-        midDev.displayEmployeeInfo();
+        SetTask setArray = new SetTask();
+        int[] result = setArray.enterNumbers();
+        System.out.println("Unique numbers is: " + setArray.findUniqueElements(result));
 
-        Developer sinDev = new Developer("Andrey", 700, "senior");
-        sinDev.displayEmployeeInfo();
+
+
+
 
 
 
