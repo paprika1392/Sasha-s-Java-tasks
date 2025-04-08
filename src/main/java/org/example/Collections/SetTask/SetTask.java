@@ -1,4 +1,4 @@
-package org.example.Collections;
+package org.example.Collections.SetTask;
 
 import java.util.*;
 
