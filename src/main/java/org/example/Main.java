@@ -1,6 +1,9 @@
 package org.example;
 
-import org.example.Collections.SetTask;
+import org.example.Collections.ListTask.Student;
+import org.example.Collections.ListTask.StudentManager;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,11 +44,32 @@ public class Main {
 //        Developer sinDev = new Developer("Andrey", 700, "senior");
 //        sinDev.displayEmployeeInfo();
 
-        //5
+//        //5
+//
+//        SetTask setArray = new SetTask();
+//        int[] result = setArray.enterNumbers();
+//        System.out.println("Unique numbers is: " + setArray.findUniqueElements(result));
 
-        SetTask setArray = new SetTask();
-        int[] result = setArray.enterNumbers();
-        System.out.println("Unique numbers is: " + setArray.findUniqueElements(result));
+          // 6
+
+        Student student1 = new Student("Sasha", "Sashkovich", 4);
+        Student student2 = new Student("Pasha", "Pachkovich", 5);
+        Student student3 = new Student("Petya", "Petskovich", 3);
+        Student student4 = new Student("Ilya", "Ilyich", 10);
+        Student student5 = new Student("Max", "Maximovich", 2);
+
+        StudentManager.addStudent(student1);
+        StudentManager.addStudent(student2);
+        StudentManager.addStudent(student3);
+        StudentManager.addStudent(student4);
+        StudentManager.addStudent(student5);
+
+        StudentManager.printAllStudents();
+
+        StudentManager.removeStudent();
+
+        StudentManager.printAllStudents();
+
 
 
 
