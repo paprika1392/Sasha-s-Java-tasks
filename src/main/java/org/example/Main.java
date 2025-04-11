@@ -3,11 +3,14 @@ package org.example;
 import org.example.Collections.ListTask.Student;
 import org.example.Collections.ListTask.StudentManager;
 import org.example.Collections.MapTask.PhoneBook;
+import org.example.ExceptionsTask.FileReaderUntil;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //1
         //IfElseTasks ifElseTasks = new IfElseTasks();
         //ifElseTasks.ifElseTask1();
@@ -73,27 +76,27 @@ public class Main {
 
         // 7
 
-        PhoneBook phoneBook = new PhoneBook();
+//        PhoneBook phoneBook = new PhoneBook();
+//
+//        phoneBook.edEntry("Sasha", "5551244");
+//        phoneBook.edEntry("Kate", "5557788");
+//        phoneBook.edEntry("Petya", "1111111");
+//
+//        phoneBook.removeEntry("Kate");
+//
+//        phoneBook.updateEntry("Petya", "7771266");
+//
+//        phoneBook.printAllEntries();
 
-        phoneBook.edEntry("Sasha", "5551244");
-        phoneBook.edEntry("Kate", "5557788");
-        phoneBook.edEntry("Petya", "1111111");
+        //8
 
-        phoneBook.removeEntry("Kate");
-
-        phoneBook.updateEntry("Petya", "7771266");
-
-        phoneBook.printAllEntries();
-
-
-
-
-
-
-
-
-
-
+        try {
+            FileReaderUntil.readFile();
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
 
 
     }
