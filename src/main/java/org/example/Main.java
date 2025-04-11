@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.Collections.ListTask.Student;
 import org.example.Collections.ListTask.StudentManager;
+import org.example.Collections.MapTask.PhoneBook;
 
 import java.util.Arrays;
 
@@ -51,24 +52,40 @@ public class Main {
 //        System.out.println("Unique numbers is: " + setArray.findUniqueElements(result));
 
           // 6
+//
+//        Student student1 = new Student("Sasha", "Sashkovich", 4);
+//        Student student2 = new Student("Pasha", "Pachkovich", 5);
+//        Student student3 = new Student("Petya", "Petskovich", 3);
+//        Student student4 = new Student("Ilya", "Ilyich", 10);
+//        Student student5 = new Student("Max", "Maximovich", 2);
+//
+//        StudentManager.addStudent(student1);
+//        StudentManager.addStudent(student2);
+//        StudentManager.addStudent(student3);
+//        StudentManager.addStudent(student4);
+//        StudentManager.addStudent(student5);
+//
+//        StudentManager.printAllStudents();
+//
+//        StudentManager.removeStudent();
+//
+//        StudentManager.printAllStudents();
 
-        Student student1 = new Student("Sasha", "Sashkovich", 4);
-        Student student2 = new Student("Pasha", "Pachkovich", 5);
-        Student student3 = new Student("Petya", "Petskovich", 3);
-        Student student4 = new Student("Ilya", "Ilyich", 10);
-        Student student5 = new Student("Max", "Maximovich", 2);
+        // 7
 
-        StudentManager.addStudent(student1);
-        StudentManager.addStudent(student2);
-        StudentManager.addStudent(student3);
-        StudentManager.addStudent(student4);
-        StudentManager.addStudent(student5);
+        PhoneBook phoneBook = new PhoneBook();
 
-        StudentManager.printAllStudents();
+        phoneBook.edEntry("Sasha", "5551244");
+        phoneBook.edEntry("Kate", "5557788");
+        phoneBook.edEntry("Petya", "1111111");
 
-        StudentManager.removeStudent();
+        phoneBook.removeEntry("Kate");
 
-        StudentManager.printAllStudents();
+        phoneBook.updateEntry("Petya", "7771266");
+
+        phoneBook.printAllEntries();
+
+
 
 
 
