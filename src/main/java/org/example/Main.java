@@ -4,10 +4,15 @@ import org.example.Collections.ListTask.Student;
 import org.example.Collections.ListTask.StudentManager;
 import org.example.Collections.MapTask.PhoneBook;
 import org.example.ExceptionsTask.FileReaderUntil;
+import org.example.InterfaceTask.EmailNotification;
+import org.example.InterfaceTask.Notification;
+import org.example.InterfaceTask.SMSNotification;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -87,17 +92,28 @@ public class Main {
 //        phoneBook.updateEntry("Petya", "7771266");
 //
 //        phoneBook.printAllEntries();
+//
+//        //8
+//
+//        try {
+//            FileReaderUntil.readFile();
+//        } catch (FileNotFoundException e) {
+//            System.out.println(e.getMessage());
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//
+          //9
 
-        //8
+        List<Notification> notifications = new LinkedList<>();
+        notifications.add(new EmailNotification());
+        notifications.add(new SMSNotification());
 
-        try {
-            FileReaderUntil.readFile();
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
+        for (Notification n : notifications) {
+            n.sendMessage("Hello!");
+            n.checkStatus();
         }
-
 
     }
 }
