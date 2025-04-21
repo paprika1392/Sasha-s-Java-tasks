@@ -46,7 +46,7 @@ public class IfElseTasks {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How old are you? Enter you age: ");
 
-        short age = scanner.nextByte();
+        short age = scanner.nextShort();
 
         if (age < 12) {
             System.out.println("You are " + age + " years old. It means you are a kid.");
