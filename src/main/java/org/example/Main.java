@@ -79,19 +79,19 @@ public class Main {
 //
 //        StudentManager.printAllStudents();
 
-        // 7
+      //   7
 
-//        PhoneBook phoneBook = new PhoneBook();
-//
-//        phoneBook.addEntry("Sasha", "5551244");
-//        phoneBook.addEntry("Kate", "5557788");
-//        phoneBook.addEntry("Petya", "1111111");
-//
-//        phoneBook.removeEntry("Kate");
-//
-//        phoneBook.updateEntry("Petya", "7771266");
-//
-//        phoneBook.printAllEntries();
+        PhoneBook phoneBook = new PhoneBook();
+
+        phoneBook.addEntry("Sasha", "5551244");
+        phoneBook.addEntry("Kate", "5557788");
+        phoneBook.addEntry("Petya", "1111111");
+
+        phoneBook.removeEntry("Kate");
+
+        phoneBook.updateEntry("Petya", "7771266");
+
+        phoneBook.printAllEntries();
 //
 //        //8
 //
@@ -104,17 +104,17 @@ public class Main {
 //        }
 //
 //
-          //9
-
-        List<Notification> notifications = new LinkedList<>();
-        notifications.add(new EmailNotification());
-        notifications.add(new SMSNotification());
-
-        for (Notification n : notifications) {
-            n.sendMessage("bla bla bla");
-            n.checkStatus();
-        }
-
-    }
+//          //9
+//
+//        List<Notification> notifications = new LinkedList<>();
+//        notifications.add(new EmailNotification());
+//        notifications.add(new SMSNotification());
+//
+//        for (Notification n : notifications) {
+//            n.sendMessage("bla bla bla");
+//            n.checkStatus();
+//        }
+//
+   }
 }
 
