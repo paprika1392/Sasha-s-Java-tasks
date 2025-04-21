@@ -9,23 +9,24 @@ public class PhoneBook {
 
     public void addEntry(String name, String phoneNumber) {
         phoneBookMap.put(name, phoneNumber);
-        System.out.println("Has been added user: " + name + " with phone number: " + phoneNumber);
+        System.out.println("Has been added user '" + name + "' with phone number: " + phoneNumber);
     }
 
     public void removeEntry(String name) {
-        if(phoneBookMap.remove(name) != null) {
-            System.out.println("Has been removed: " + name);
-        } else {
-            System.out.println("The user not found.");
-        }
+       if (phoneBookMap.containsKey(name)) {
+           phoneBookMap.remove(name);
+           System.out.println("User with name '" + name + "' has been removed.");
+       } else {
+           System.out.println("User with name '" + name + "' not found.");
+       }
     }
 
     public void updateEntry(String name, String newPhoneNumber) {
         if(phoneBookMap.containsKey(name)) {
             phoneBookMap.put(name, newPhoneNumber);
-            System.out.println("Have been updated phone number of" + name + ": " + newPhoneNumber);
+            System.out.println("Have been updated phone number of '" + name + "': " + newPhoneNumber);
         } else {
-            System.out.println("The user: " + name + " is not found.");
+            System.out.println("The user '" + name + "' is not found.");
         }
     }
 
