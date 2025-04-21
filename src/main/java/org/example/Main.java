@@ -79,30 +79,32 @@ public class Main {
 //
 //        StudentManager.printAllStudents();
 
-      //   7
-
-        PhoneBook phoneBook = new PhoneBook();
-
-        phoneBook.addEntry("Sasha", "5551244");
-        phoneBook.addEntry("Kate", "5557788");
-        phoneBook.addEntry("Petya", "1111111");
-
-        phoneBook.removeEntry("Kate");
-
-        phoneBook.updateEntry("Petya", "7771266");
-
-        phoneBook.printAllEntries();
+//      //   7
+//
+//        PhoneBook phoneBook = new PhoneBook();
+//
+//        phoneBook.addEntry("Sasha", "5551244");
+//        phoneBook.addEntry("Kate", "5557788");
+//        phoneBook.addEntry("Petya", "1111111");
+//
+//        phoneBook.removeEntry("Kate");
+//
+//        phoneBook.updateEntry("Petya", "7771266");
+//
+//        phoneBook.printAllEntries();
 //
 //        //8
-//
-//        try {
-//            FileReaderUntil.readFile();
-//        } catch (FileNotFoundException e) {
-//            System.out.println(e.getMessage());
-//        } catch (IOException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
+
+        String path = "src/main/resources/JavaTask.txt";
+
+        try {
+            FileReaderUntil.readFile(path);
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
 //
 //          //9
 //

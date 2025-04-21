@@ -4,11 +4,8 @@ import java.io.*;
 
 public class FileReaderUntil {
 
-    private static final String PATH = "src/main/resources/JavaTask.txt";
-
-
-    public static void readFile() throws IOException {
-        BufferedReader reader= new BufferedReader(new FileReader(PATH));
+    public static void readFile(String path) throws IOException {
+        BufferedReader reader= new BufferedReader(new FileReader(path));
 
         String line = reader.readLine();
 
