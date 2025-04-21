@@ -14,9 +14,9 @@ public class IfElseTasks {
         int number = scanner.nextInt();
 
         if (number % 2 == 0) {
-            System.out.println("The number " + number + " is integer.");
+            System.out.println("The number " + number + " is even number.");
         } else {
-            System.out.println("Current number is not integer");
+            System.out.println("Current number is not even number");
         }
     }
 
