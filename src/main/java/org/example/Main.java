@@ -83,9 +83,9 @@ public class Main {
 
 //        PhoneBook phoneBook = new PhoneBook();
 //
-//        phoneBook.edEntry("Sasha", "5551244");
-//        phoneBook.edEntry("Kate", "5557788");
-//        phoneBook.edEntry("Petya", "1111111");
+//        phoneBook.addEntry("Sasha", "5551244");
+//        phoneBook.addEntry("Kate", "5557788");
+//        phoneBook.addEntry("Petya", "1111111");
 //
 //        phoneBook.removeEntry("Kate");
 //

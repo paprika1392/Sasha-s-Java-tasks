@@ -7,7 +7,7 @@ public class PhoneBook {
 
     private Map<String, String> phoneBookMap = new HashMap<>();
 
-    public void edEntry(String name, String phoneNumber) {
+    public void addEntry(String name, String phoneNumber) {
         phoneBookMap.put(name, phoneNumber);
         System.out.println("Has been added user: " + name + " with phone number: " + phoneNumber);
     }
