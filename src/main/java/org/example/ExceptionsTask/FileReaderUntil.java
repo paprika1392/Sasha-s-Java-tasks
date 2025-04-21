@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FileReaderUntil {
 
-    private static final String PATH = "C:/Users/Paprika/Desktop/JavaTask.txt";
+    private static final String PATH = "src/main/resources/JavaTask.txt";
 
 
     public static void readFile() throws IOException {
