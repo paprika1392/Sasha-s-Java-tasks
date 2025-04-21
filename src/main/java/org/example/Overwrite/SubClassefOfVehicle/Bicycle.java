@@ -4,7 +4,8 @@ import org.example.Overwrite.Vehicle;
 
 public class Bicycle extends Vehicle {
 
-    @Override public void move() {
+    @Override
+    public void move() {
         System.out.println("The bicycle is moving");
     }
 }
