@@ -111,7 +111,7 @@ public class Main {
         notifications.add(new SMSNotification());
 
         for (Notification n : notifications) {
-            n.sendMessage("Hello!");
+            n.sendMessage("bla bla bla");
             n.checkStatus();
         }
 
